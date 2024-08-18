@@ -21,7 +21,7 @@ public class ThreadStateMain {
 
     static class myRunnable implements Runnable {
         @Override
-        public void run() {
+        public void run()  throws RuntimeException {
             try {
                 log("start");
                 log("myThread.state2 =" + Thread.currentThread().getState());
