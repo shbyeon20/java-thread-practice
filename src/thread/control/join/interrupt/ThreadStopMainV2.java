@@ -3,7 +3,7 @@ package thread.control.join.interrupt;
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
-public class ThreadStopMainV1 {
+public class ThreadStopMainV2 {
     public static void main(String[] args) {
         MyTask task = new MyTask();
         Thread thread = new Thread(task, "work");
