@@ -14,14 +14,11 @@ public class VolatileFlagMain {
         task.runFlag = false;
         log("runflag = "+task.runFlag);
         log("main 종료");
-
-
     }
 
     private static class Mytask implements Runnable {
 
-        volatile boolean runFlag = true;
-
+        boolean runFlag = true;
 
         @Override
         public void run() {
@@ -32,7 +29,6 @@ public class VolatileFlagMain {
                 sleep(1000);
             }
             log("task 종료");
-
         }
     }
 }
