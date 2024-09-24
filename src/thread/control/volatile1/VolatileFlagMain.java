@@ -22,7 +22,7 @@ public class VolatileFlagMain {
 
         @Override
         public void run() {
-            log("task 시작");
+            log("task 시작 ");
             while (runFlag) {
                 //run flag가 false가 되면 탈출
                 System.out.println("hello");
