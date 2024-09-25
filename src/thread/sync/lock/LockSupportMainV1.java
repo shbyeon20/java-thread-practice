@@ -28,6 +28,7 @@ public class LockSupportMainV1 {
             log("park 종료, state"+Thread.currentThread().getState());
             log("인터럽트 상태 : "+Thread.currentThread().isInterrupted());
 
+
         }
     }
 }
