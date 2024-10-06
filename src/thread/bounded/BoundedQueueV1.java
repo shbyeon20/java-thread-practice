@@ -20,9 +20,7 @@ public class BoundedQueueV1 implements BoundedQueue {
       log("[put] 큐가 가득참, 버림 " + data);
       return;
     }
-
     queue.offer(data);
-
   }
 
   @Override
@@ -30,7 +28,6 @@ public class BoundedQueueV1 implements BoundedQueue {
     if (queue.isEmpty()) {
       return null;
     }
-
     return queue.poll();
   }
 
