@@ -27,7 +27,7 @@ public class BoundedQueueV2 implements BoundedQueue {
 
   @Override
   public synchronized String take() {
-    if (queue.isEmpty()) {
+    while (queue.isEmpty()) {
       log("[take] 큐에 데이터 없음, 대기 ");
       sleep(1000);
     }
